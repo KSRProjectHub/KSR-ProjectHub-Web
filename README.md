@@ -1,2 +1,0 @@
-# KSR-ProjectHub
-Web Site
