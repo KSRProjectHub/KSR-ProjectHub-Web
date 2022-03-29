@@ -33,8 +33,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="work.html">Projects</a></li>
+                <!--<li><a href="services.html">Services</a></li>
+                <li><a href="work.html">Projects</a></li>-->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="social-bar">
@@ -71,30 +71,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="contact">
             <div class="contact-form">
-                <form>
+                <form action="https://formsubmit.co/ksrprojecthub@gmail.com" method="POST">
                     <div class="row">
-                        <div class="input50">
-                            <input type="text" placeholder="First Name" />
-                        </div>
-                        <div class="input50">
-                            <input type="text" placeholder="Last Name" />
+                        <div class="input100">
+                            <input type="text" placeholder="Full Name" id="name" name="name" required/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input50">
-                            <input type="text" placeholder="Email" />
+                            <input type="email" placeholder="Email" name="email" required />
                         </div>
                         <div class="input50">
-                            <input type="text" placeholder="Subject" />
+                            <input type="text" placeholder="Subject" name="subject" id="subject" required />
                         </div>
                     </div>
                     <div class="row">
                         <div class="input100">
-                            <textarea placeholder="Message"></textarea>
+                            <textarea placeholder="Message" name="message" id="message" required></textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input100">
+                            <div id="captcha">
+                                <div data-callback="submit" data-theme="dark" data-sitekey="6LdpKIMUAAAAAPH4XLcypBTMPsV7eTWZrznHCndM" class="g-recaptcha"></div>
+                                <script src="https://www.google.com/recaptcha/api.js?" async defer></script>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input100">
+                            <input type="hidden" value="https://mail.google.com/" name="url">
+               
                             <input type="submit" value="Send" />
                         </div>
                     </div>
